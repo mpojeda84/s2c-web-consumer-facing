@@ -1,0 +1,34 @@
+.map{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.angular-google-map-container { height: 100%; }
+
+.s2c_overlay_container{
+    position: relative;
+}
+.s2c_overlay{
+    position: absolute; width: 100%;height: 100%; z-index: 10; background-color: white; opacity: 0.5;
+}
+.errors.ng-active {
+    background:maroon;
+    color:white;
+    padding:5px;
+    border-radius:5px;
+    margin-top:15px;
+    position:relative;
+}
+.errors.ng-active:after {
+    position:absolute;
+    top:-10px;
+    content:"";
+    left:20px;
+    border-style:solid;
+    border-color:transparent transparent maroon;
+    border-width:5px;
+}
