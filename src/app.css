@@ -32,3 +32,8 @@
     border-color:transparent transparent maroon;
     border-width:5px;
 }
+
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+}
