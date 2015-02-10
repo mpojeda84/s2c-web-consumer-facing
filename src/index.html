@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en" data-ng-app="app">
+<head>
+    <title>Sent2Cuba</title>
+
+    <!--For SEO purpose  -->
+    <!--<base href="/src/">-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <meta name="fragment" content="!" />
+
+    <script src="css/skel/jquery.min.js"></script>
+    <script src="css/skel/skel.min.js"></script>
+    <script src="css/skel/skel-layers.min.js"></script>
+    <script src="css/skel/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-xlarge.css" />
+    </noscript>
+    <link rel="stylesheet" href="../libraries/bower_components/toastr/toastr.css" />
+
+
+    <script src="../libraries/bower_components/angular/angular.js"></script>
+    <script src="../libraries/bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../libraries/bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="../libraries/bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../libraries/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../libraries/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../libraries/bower_components/angular-translate/angular-translate.js"></script>
+    <script src="../libraries/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+
+    <script src="../libraries/bower_components/angular-foundation/mm-foundation-tpls.js"></script>
+
+    <script src="../libraries/bower_components/toastr/toastr.js"></script>
+
+    <script src='//maps.googleapis.com/maps/api/js?sensor=true'></script>
+
+    <script src='../libraries/isolated_libraries/ngAutocomplete.js'></script>
+    <script src='../libraries/bower_components/lodash/dist/lodash.underscore.js'></script>
+    <script src='../libraries/bower_components/angular-google-maps/dist/angular-google-maps.js'></script>
+
+    <!-- App -->
+    <script src="app/app.module.js"></script>
+
+    <script src="app/core/core.module.js"></script>
+    <script src="app/core/core.run.js"></script>
+    <script src="app/core/core.constants.js"></script>
+    <script src="app/core/core.validation.service.js"></script>
+    <script src="app/core/core.location.service.js"></script>
+    <script src="app/core/core.clientstorage.service.js"></script>
+
+    <!-- Blocks -->
+    <script src="app/core/blocks/logger/logger.module.js"></script>
+    <script src="app/core/blocks/logger/logger.js"></script>
+    <script src="app/core/blocks/exception/exception.module.js"></script>
+    <script src="app/core/blocks/exception/exception-handler.js"></script>
+    <script src="app/core/blocks/exception/exception.js"></script>
+
+    <script src="app/components/components.module.js"></script>
+    <script src="app/components/range/range.js"></script>
+    <script src="app/components/region-selector/region-selector.js"></script>
+    <script src="app/components/s2cDisabled/s2cDisabled.js"></script>
+    <script src="app/components/zipcode-popup/zipcode-popup.js"></script>
+
+    <script src="app/site/site.module.js"></script>
+    <script src="app/site/site.controller.js"></script>
+    <script src="app/site/site.services.js"></script>
+
+    <script src="app/site/blog/blog.module.js"></script>
+    <script src="app/site/blog/blog.controller.js"></script>
+
+    <script src="app/site/contact/contact.module.js"></script>
+    <script src="app/site/contact/contact.controller.js"></script>
+
+    <script src="app/site/privacy/privacy.module.js"></script>
+    <script src="app/site/privacy/privacy.controller.js"></script>
+
+    <script src="app/welcome/welcome.module.js"></script>
+    <script src="app/welcome/welcome.controller.js"></script>
+
+    <script src="app/search/search.module.js"></script>
+    <script src="app/search/search.controller.js"></script>
+    <script src="app/search/search.service.js"></script>
+
+    <script src="app/search/package/package.module.js"></script>
+    <script src="app/search/package/package.controller.js"></script>
+    <script src="app/search/package/package.service.js"></script>
+    <script src="app/search/package/view/view.package.controller.js"></script>
+
+
+    <script src="app/search/paperwork/paperwork.module.js"></script>
+    <script src="app/search/paperwork/paperwork.controller.js"></script>
+
+
+</head>
+<body>
+    <div data-ng-include="'app/site/site.html'"></div>
+</body>
+</html>

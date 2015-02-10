@@ -1,0 +1,80 @@
+/* skel-baseline v2.0.1 | (c) n33 | getskel.com | MIT licensed */
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 12pt;
+	}
+
+#titleBar {
+    background: #444;
+    line-height: 44px;
+    text-align: center;
+}
+
+#titleBar .title {
+    color: #fff;
+    font-weight: bold;
+}
+
+#titleBar .toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 44px;
+    background: #49bf9d;
+    color: #fff;
+    font-weight: bold;
+}
+
+#navPanel {
+    background: #444;
+    line-height: 3em;
+    padding: 1.5em;
+}
+
+#navPanel a {
+    border-top: solid 2px #555;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navPanel a:first-child {
+    border-top: 0;
+}
+
+/* Banner */
+
+	#banner {
+		padding: 5em 2em 4em 2em;
+	}
+
+		#banner h2 {
+			font-size: 2.25em;
+		}
+
+		#banner p {
+			font-size: 1.25em;
+		}
+
+/* Main */
+
+	#main {
+		padding: 2em 0;
+	}
+
+/* Footer */
+
+	#footer {
+		padding: 2em 0;
+	}
+
+		#footer .copyright li {
+			border-left: 0;
+			margin-left: 0;
+			padding-left: 0;
+			display: block;
+		}

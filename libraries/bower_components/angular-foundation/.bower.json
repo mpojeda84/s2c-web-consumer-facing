@@ -18,6 +18,6 @@
     "commit": "b7e4a0550554785fc356dccb4d9dc2742efc100f"
   },
   "_source": "git://github.com/pineconellc/angular-foundation-bower.git",
-  "_target": "*",
+  "_target": "~0.5.1",
   "_originalSource": "angular-foundation"
 }

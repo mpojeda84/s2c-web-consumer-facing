@@ -1,0 +1,38 @@
+<div class="search">
+
+    <h2>
+        Offer Details
+
+        <a class="button small pull-left" ng-click="backButton()" style="padding-right: 30px;">Back</a>
+    </h2>
+    <div class="row">
+        <div class="12u$">
+            <h3>{{viewPackageCtrl.package.ownerName}}</h3>
+        </div>
+    </div>
+    {{viewPackageCtrl.package.ownerLocation}}
+    {{viewPackageCtrl.package.price}}
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis dolor explicabo, obcaecati optio recusandae repellat tempore temporibus. Ducimus in labore, magni odio quae suscipit? Esse ipsum molestiae provident sint?</p>
+    <h4>View Map</h4>
+    <div class="row">
+        <div class="6u">
+            <img src="images/pict.jpg" alt="" ng-click="viewMap = true" ng-show="!viewMap"/>
+
+            <div class="angular-google-map-container" ng-if="viewMap">
+                <ui-gmap-google-map center='viewPackageCtrl.map.center' zoom='viewPackageCtrl.map.zoom' options="viewPackageCtrl.options">
+
+                    <ui-gmap-marker coords="viewPackageCtrl.map.center" idkey="viewPackageCtrl.package.id" click="viewPackageCtrl.showMarker()">
+                        <ui-gmap-window options="viewPackageCtrl.markerOptions" close="viewPackageCtrl.showMarker()"  >
+                            <div>{{viewPackageCtrl.package.ownerName}}
+                                <div>{{viewPackageCtrl.package.ownerLocation}}</div>
+                            </div>
+                        </ui-gmap-window>
+                    </ui-gmap-marker>
+
+                </ui-gmap-google-map>
+            </div>
+        </div>
+    </div>
+</div>
+

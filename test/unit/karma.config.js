@@ -24,11 +24,11 @@ module.exports = function(config){
             'src/business-management/money-offer/money-offer-controllers.js',
             'src/business-management/money-offer/money-offer-services.js',
 
-            'src/components/region-selector/region-selector.js',
-            'src/components/region-selector/region-selector-controllers.js',
-            'src/components/region-selector/region-selector-directives.js',
-            'src/components/region-selector/region-selector-filters.js',
-            'src/components/region-selector/region-selector-services.js',
+            '../../src/app/components/region-selector/region-selector.js',
+            '../../src/app/components/region-selector/region-selector-controllers.js',
+            '../../src/app/components/region-selector/region-selector-directives.js',
+            '../../src/app/components/region-selector/region-selector-filters.js',
+            '../../src/app/components/region-selector/region-selector-services.js',
 
             'test/unit/**/*_test.js'
         ],

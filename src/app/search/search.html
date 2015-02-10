@@ -1,0 +1,33 @@
+<div class="search" data-ng-controller="SearchCtrl as searchCtrl">
+
+    <div>
+        <h2>Select the service that you want to search</h2>
+    </div>
+    <div class="row">
+        <div class="4u">
+                <section class="special box">
+                    <a ui-sref="package({zipCode:siteCtrl.currentLocation.zipCode})"><i class="icon fa fa-pencil major"></i></a>
+                    <h3>Package</h3>
+                    <p>Find the best offers to send a package to Cuba, food, clothes, everything...</p>
+                </section>
+        </div>
+        <div class="4u">
+            <section class="special box">
+                <a ui-sref="paperwork()"><i class="icon fa fa-book major"></i></a>
+                <h3>Paperwork</h3>
+                <p>Fills passports, documents, visa, help center,  all.</p>
+            </section>
+        </div>
+        <div class="4u">
+            <section class="special box">
+                <i class="icon fa fa-money major"></i>
+                <h3>Package</h3>
+                <p>Find the best offers to send a package to Cuba, food, clothes, everything...</p>
+            </section>
+        </div>
+    </div>
+    <div ui-view></div>
+
+</div>
+<link rel="stylesheet" type="text/css" href="app/search/search.css"/>
+<!--<ui-gmap-google-map center='searchCtrl.map.center' zoom='searchCtrl.map.zoom'></ui-gmap-google-map>-->
