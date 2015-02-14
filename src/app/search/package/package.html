@@ -1,19 +1,40 @@
 <div>
-    <h2>
-        Package Offers
-    </h2>
+    <div class="row">
+        <div class="4u">
+            <h2>
+                Package Offers
+            </h2>
+        </div>
+        <div class="8u">
+                <ul class="actions pull-right">
+                    <li>Sort By</li>
+                    <li>
+                        <div class="select-wrapper">
+                            <select ng-model="packageCtrl.searchParams.category" ng-change="packageCtrl.goTo()" style="width: 150px">
+                                <option value="0">Relevant</option>
+                                <option value="1">Price: Min-Max</option>
+                                <option value="2">Price: Max-Min</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <div class="row">
         <div class="3u">
             <div>
                 <h4>category</h4>
                 <div>
-                     <select ng-model="packageCtrl.searchParams.category" ng-change="packageCtrl.goTo()">
-                         <option value="0">---all----</option>
-                         <option value="1">food</option>
-                         <option value="2">bag</option>
-                         <option value="3">things</option>
-                     </select>
+                    <div class="select-wrapper">
+                        <select ng-model="packageCtrl.searchParams.category" ng-change="packageCtrl.goTo()">
+                             <option value="0">---all----</option>
+                             <option value="1">food</option>
+                             <option value="2">bag</option>
+                             <option value="3">things</option>
+                         </select>
+                    </div>
                 </div>
             </div>
             <div>
@@ -26,22 +47,19 @@
 
         </div>
         <div class="9u$">
-            <table st-table="packageCtrl.offers">
-                <thead>
-                <tr>
-                    <th>first name</th>
-                    <th>location</th>
-                    <th>price</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr ng-repeat="row in packageCtrl.offers">
-                    <td><a ui-sref="packageView({id:$index})">{{row.ownerName}}</a></td>
-                    <td>{{row.ownerLocation}}</td>
-                    <td>{{row.price | currency}}</td>
-                </tr>
-                </tbody>
-            </table>
+            <div ng-repeat="row in packageCtrl.offers" class="row item">
+                <div class="2u">
+                    <i class="fa fa-image fa-5x"></i>
+                </div>
+                <div class="7u">
+                    <a style="font-size: 18px;" ui-sref="packageView({id:$index})">{{row.ownerName}}</a><br/>
+                    <i class="fa fa-map-marker" style="margin-right: 10px;"></i>{{row.ownerLocation}} <br/>
+                    <span style="font-style: italic; color:#bbbbbb; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dicta doloribus ea et eum, exercitationem harum id in incidunt, mollitia, nesciunt odit quia quibusdam recusandae </span> <br/>
+                </div>
+                <div class="3u$">
+                    <h2 ng-bind="row.price | currency"></h2>
+                </div>
+            </div>
             <pagination ng-show="packageCtrl.offers.length != 0" total-items="packageCtrl.total" page="packageCtrl.searchParams.page" ng-click="packageCtrl.goTo()"></pagination>
         </div>
     </div>
