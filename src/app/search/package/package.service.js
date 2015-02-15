@@ -16,14 +16,14 @@ function PackageSrv($http, SearchSrv, ValidationSrv) {
     return {
         search: function(params){
             validateParams(params);
-            return $http.get('http://10.0.0.3:8080/package/offers', {params:params})
+            return $http.get('http://localhost:8080/package/offers', {params:params})
                 .error(function (error) {
 
                 })
         },
 
         load: function(id){
-            return $http.get('http://10.0.0.3:8080/package/'+ id)
+            return $http.get('http://localhost:8080/package/'+ id)
                 .error(function (error) {
 
                 })

@@ -4,32 +4,24 @@
         <h1 id="title"><a href="#">SENT TO CUBA</a></h1>
         <nav id="nav">
             <ul>
+                <li>
+                    Your Location:
+                </li>
+                <li>
+                    <input id="location" placeholder="Enter your Location" type="text" name="location" ng-model="siteCtrl.newZipCode">
+                </li>
+                <li>
+                    <a class="button" ng-click="siteCtrl.setLocation()">Go</a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
                 <li><a ui-sref="blog">blog</a></li>
                 <li><a ui-sref="privacy">privacy</a></li>
                 <li><a ui-sref="contact">contact us</a></li>
             </ul>
         </nav>
     </header>
-    <div class="offersBar">
-        <div class="container">
-            <div class="row 50%">
-                <div class="6u">
-                    <ul class="actions">
-                        <li><a ui-sref="search({zipCode:siteCtrl.currentLocation.zipCode})">Search Offers</a></li>
-                        <li><a ui-sref="package({zipCode:siteCtrl.currentLocation.zipCode})">Package</a></li>
-                        <li><a ui-sref="paperwork({zipCode:siteCtrl.currentLocation.zipCode})">Paperwork</a></li>
-                        <li><a ui-sref="call({zipCode:siteCtrl.currentLocation.zipCode})">Call</a></li>
-                    </ul>
-                </div>
-                <div class="3u">
-                     <input id="location" placeholder="Enter your Location" type="text" name="location" ng-model="siteCtrl.newZipCode">
-                </div>
-                <div class="3u$">
-                     <a class="button" ng-click="siteCtrl.setLocation()">Go</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div id="main" class="container">
            <div ui-view></div>
